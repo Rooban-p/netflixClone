@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navSpace{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+}
+.navNar{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: yellow; */
+
+}
+.navStartBar{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.navNar img{
+    height: 85%;
+    width: 20%;
+    /* background-color: white; */
+}
+.menu{
+    width: 83%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+.menubar{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.menubar:hover{
+    color: #757575;
+    transition: 0.1s;
+}
+.navEndbar{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    /* background-color: aqua; */
+}
+.userAvatar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    height: 55%;
+    /* background-color: brown; */
+}
+.userAvatar img{
+    width: 55%;
+    height: 75%;
+    border-radius: 4px;
+}
+.searchBar{
+    width:50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* background-color: chartreuse; */
+}
+.searchIcon{
+    font-size: 25px;
+}
+.bellIcon{
+    font-size: 20px;
+}
+.searchFiled{
+    position: absolute;
+    right: 105%;
+    opacity: 0;
+    
+}
+.searchFiled input{
+    font-size: 14px;
+    padding: 5px;
+    text-align: end;
+    border: 1px solid white;
+    background: transparent;
+}
