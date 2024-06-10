@@ -12,26 +12,26 @@ const HomeCover4 = () => {
       
 <div className="Whole">
 
-    <div className="A1">
+    <div className="sec13">
 
-        <img className='z1' src={img1} alt="" />
+        <img className='homecover13' src={img1} alt="" />
 
-          <div className="A6">
-              <div className="A2">
+          <div className="sec16">
+              <div className="sec14">
 
-               <img className='z2' src={img2} alt="" />
+               <img className='homecover14' src={img2} alt="" />
 
                <h1>Watch this season</h1>
                <p>In this Emmy-Winning shows based on the DC comic book series </p>
                <p>a boy's part human, part deer and all heart finds adventure in </p> 
                <p>a postapocalyptic world.</p> 
 
-               <div className="A3">
-                  <div className="z3">
+               <div className="sec15">
+                  <div className="homecover15">
                      <FaPlay className='play'/>
                     <p>Play</p>
                     </div>
-                  <div className="z4">
+                  <div className="homecover16">
                   <IoIosInformationCircleOutline className='info'/>
 
                     <p>More Info</p>
