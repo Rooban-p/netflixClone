@@ -1,12 +1,12 @@
 import React from 'react'
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaPlay } from "react-icons/fa";
-import "./HomeCover.css"
-import img1 from '../../Assets/Assets/img1.webp'
-import img2 from '../../Assets/Assets/img2.webp'
+import "./HomeCover4.css"
+import img1 from '../../Assets/Assets/hc2.webp'
+import img2 from "../../Assets/Assets/hc7.webp"
 
 
-const HomeCover = () => {
+const HomeCover4 = () => {
   return (
     <div>
       
@@ -20,9 +20,11 @@ const HomeCover = () => {
               <div className="A2">
 
                <img className='z2' src={img2} alt="" />
-               <h1>Watch in Tamil, Telugu, Kannada</h1>
-               <p>Comics choas abounds when a simple misunderstanding causes</p>
-               <p>two neighbours to transform form friends into enemies</p> 
+
+               <h1>Watch this season</h1>
+               <p>In this Emmy-Winning shows based on the DC comic book series </p>
+               <p>a boy's part human, part deer and all heart finds adventure in </p> 
+               <p>a postapocalyptic world.</p> 
 
                <div className="A3">
                   <div className="z3">
@@ -35,7 +37,6 @@ const HomeCover = () => {
                     <p>More Info</p>
                     </div>
                 </div>
-  
               </div>                   
           </div>
       </div>        
@@ -44,4 +45,4 @@ const HomeCover = () => {
   )
 }
 
-export default HomeCover
+export default HomeCover4

@@ -37,61 +37,61 @@ const Slider2 = () => {
         onSlideChange={() => console.log("slide change")}
       >
         <SwiperSlide>
-          <div className="no1">
+          <div className="harshini1">
             <h1>1</h1>
             <img className="t1" src={tv1} alt="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="no2">
+          <div className="harshini1">
             <h1>2</h1>
             <img className="t2" src={tv2} alt="" srcset="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="no3">
+          <div className="harshini1">
             <h1>3</h1>
             <img className="t3" src={tv3} alt="" srcset="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="no4">
+          <div className="harshini1">
             <h1>4</h1>
             <img className="t4" src={tv4} alt="" srcset="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="no5">
+          <div className="harshini1">
             <h1>5</h1>
             <img className="t5" src={tv5} alt="" srcset="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="no6">
+          <div className="harshini1">
             <h1>6</h1>
             <img className="t6" src={tv6} alt="" srcset="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="no7">
+          <div className="nharshini1">
             <h1>7</h1>
             <img className="t7" src={tv7} alt="" srcset="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="no8">
+          <div className="harshini1">
             <h1>8</h1>
             <img className="t8" src={tv8} alt="" srcset="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="no9">
+          <div className="harshini1">
             <h1>9</h1>
             <img className="t9" src={tv9} alt="" srcset="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="no10">
+          <div className="harshini1">
             <h1>10</h1>
             <img className="t10" src={tv10} alt="" srcset="" />
           </div>
