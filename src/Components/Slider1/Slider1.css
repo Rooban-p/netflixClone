@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+   }
+   
+   body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Rubik", sans-serif;
+    }
+   
+   .whole {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+   }
+   
+.B{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    gap: 20px;
+}
+.B h1 {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+.Today{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.Slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+}
+.No1{
+    height: 200px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    border: none;    
+}
+.No1 h1{
+    font-size: 250px;   
+    position: relative;
+    text-align: center;
+    right: 82px;
+    color: gray;
+    
+}
+.t1 {
+    height: 180px;
+    width: 120px;
+    position: absolute;
+    text-align: center;
+}
+.No2{
+    height: 200px;
+    width: 344px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    border: none;
+    background-color: aquamarine;
+    
+}
+.No2 h1{
+    font-size: 250px;   
+    position: relative;
+    text-align: center;
+    right: 82px;
+    color: gray;
+    
+}
+.t2 {
+    height: 180px;
+    width: 120px;
+    position: absolute;
+    text-align: center;
+}
+.No3{
+    height: 200px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+}
+.No3 h1{
+    font-size: 250px;
+    position: relative;
+    text-align: center;
+    right: 93px;
+    color: gray;
+}
+.t3 {
+    height: 180px;
+    width: 120px;
+    position: absolute;
+    text-align: center;
+}
+.No4{
+    height: 200px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+}
+.No4 h1{
+    font-size: 250px;
+    position: relative;
+    text-align: center;
+    right: 93px;
+    color: gray;
+}
+.t4 {
+    height: 180px;
+    width: 120px;
+    position: absolute;
+    text-align: center;
+}
+.No5{
+    height: 200px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+}
+.No5 h1{
+    font-size: 250px;
+    position: relative;
+    text-align: center;
+    right: 93px;
+    color: gray;
+}
+.t5 {
+    height: 180px;
+    width: 120px;
+    position: absolute;
+    text-align: center;
+}
+.No6{
+    height: 200px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+    
+}
+.No6 h1{
+    font-size: 250px;
+    position: relative;
+    text-align: center;
+    right: 93px;
+    color: gray;
+}
+.t6 {
+    height: 180px;
+    width: 120px;
+    position: absolute;
+    text-align: center;
+}
+.No7{
+    height: 200px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+}
+.No7 h1{
+    font-size: 250px;
+    position: relative;
+    text-align: center;
+    right: 93px;
+    color: gray;
+}
+.t7 {
+    height: 180px;
+    width: 120px;
+    position: absolute;
+    text-align: center;
+}
+.No8{
+    height: 200px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+}
+.No8 h1{
+    font-size: 250px;
+    position: relative;
+    text-align: center;
+    right: 93px;
+    color: gray;
+}
+.t8 {
+    height: 180px;
+    width: 120px;
+    position: absolute;
+    text-align: center;
+}
+.No9{
+    height: 200px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+}
+.No9 h1{
+    font-size: 250px;
+    position: relative;
+    text-align: center;
+    right: 93px;
+    color: gray;
+}
+.t9 {
+    height: 180px;
+    width: 120px;
+    position: absolute;
+    text-align: center;
+}
+.sw{
+    width: 100%;
+    
+}
+.No10{
+    height: 200px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+}
+.No10 h1{
+    font-size: 250px;
+    position: relative;
+    text-align: center;
+    right: 155px;
+    color: gray;
+}
+.t10 {
+    height: 80px;
+    width: 120px;
+    position: absolute;  
+    text-align: center;
+}
+.movieslide h1{
+  padding: 10px;
+  width: 100%;
+  text-align: start;
+  color: white;
+}
