@@ -36,20 +36,23 @@ const Slider1 = () => {
     spaceBetween={5}
     slidesPerView={6}
     navigation
+    className='sw'
     // pagination={{ clickable: true }}
     // scrollbar={{ draggable: true }}
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log('slide change')}
       
     >
-      <SwiperSlide>
-        <div className="no1">
+     <div className="Slider">
+
+     <SwiperSlide>
+        <div className="aravind1">
             <h1 >1</h1>
             <img className='t1' src={img3} alt=""  />
            </div></SwiperSlide>
 
       <SwiperSlide>
-        <div className="no2">
+        <div className="aravind1">
             <h1>2</h1>
             <img className='t2' src={img4} alt="" srcset="" />
            </div>
@@ -57,62 +60,64 @@ const Slider1 = () => {
 
       <SwiperSlide>
          
-      <div className="no3">
+      <div className="aravind1">
             <h1>3</h1>
             <img className='t3' src={img5} alt="" srcset="" />
            </div>
       </SwiperSlide>
 
       <SwiperSlide>
-      <div className="no4">
+      <div className="aravind1">
             <h1>4</h1>
             <img className='t4' src={img6} alt="" srcset="" />
            </div>
       </SwiperSlide>
 
       <SwiperSlide>
-      <div className="no5">
+      <div className="aravind1">
             <h1>5</h1>
             <img className='t5' src={img7} alt="" srcset="" />
            </div>
       </SwiperSlide>
 
       <SwiperSlide>
-      <div className="no6">
+      <div className="aravind1">
             <h1>6</h1>
             <img className='t6' src={img8} alt="" srcset="" />
            </div>
       </SwiperSlide>
 
       <SwiperSlide>
-      <div className="no7">
+      <div className="aravind1">
             <h1>7</h1>
             <img className='t7' src={img9} alt="" srcset="" />
            </div>
       </SwiperSlide>
 
       <SwiperSlide>
-      <div className="no8">
+      <div className="aravind1">
             <h1>8</h1>
             <img className='t8' src={img10} alt="" srcset="" />
            </div>
       </SwiperSlide>
 
       <SwiperSlide>
-      <div className="no9">
+      <div className="aravind1">
             <h1>9</h1>
             <img className='t9' src={img11} alt="" srcset="" />
            </div>
       </SwiperSlide>
 
       <SwiperSlide>
-      <div className="no10">
+      <div className="aravind1">
             <h1>10</h1>
             <img className='t10' src={img12} alt="" srcset="" />
            </div> 
 
       </SwiperSlide>
-      ...
+
+     </div>
+            ...
     </Swiper>
     </div>
     
