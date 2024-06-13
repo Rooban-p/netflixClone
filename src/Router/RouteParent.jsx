@@ -7,6 +7,7 @@ import MyList from '../Layout/MyList'
 import NewsNdPopular from '../Layout/NewsNdPopular'
 import TvShows from '../Layout/TvShows'
 import Movies from '../Layout/Movies'
+import Account from '../Layout/Account'
 
 
 
@@ -24,6 +25,8 @@ const RouteParent = () => {
                 <Route path='/NewsNdPopular' element= {<NewsNdPopular/>} />
                 <Route path='/MyList' element= {<MyList/>} />
                 <Route path='/BrowseLan' element= {<BrowseLan/>} />
+                <Route path='/Account' element= {<Account/>} />
+
                
             </Routes>
         </Router>
