@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <Navbar />
       <HomeCover1 />
-    
+
       <Slider1 />
       <Slide />
       <Slide2 />
