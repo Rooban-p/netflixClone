@@ -61,7 +61,22 @@ const Footer = () => {
            <Link className='none'><h6>Contact Us</h6> </Link>
          </div>
           
-
+         </div>
+         <div className='mobile2'>
+          <div className="mobile1">
+            <h6>
+                Terms of use
+            </h6>
+            <h6>
+              Privacy statement
+            </h6>
+            <h6>
+              Cookie Preference
+            </h6>
+            <h6>
+              Help Centre
+            </h6>
+          </div>
          
               
         </div>
