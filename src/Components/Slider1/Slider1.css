@@ -118,3 +118,65 @@
   text-align: start;
   color: white;
 }
+@media(max-width:1200px){
+    .t6{
+        display: none;
+
+    }
+    .number6{
+        display: none;
+    }
+    .t7{
+        display: none;
+
+    }
+    .number7{
+        display: none;
+    }
+    .t8{
+        display: none;
+
+    }
+    .number8{
+        display: none;
+    }
+    .t9{
+        display: none;
+
+    }
+    .number9{
+        display: none;
+    }
+    .t10{
+        display: none;
+
+    }
+    .number10{
+        display: none;
+    }
+}
+.img1{
+    width: 500px;   
+}
+.whole1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50%;
+}
+.number1{
+    width: 30%;
+}
+.number2{
+    width: 20%;
+}
+.number3{
+    width: 20%;
+}
+.swiper{
+    width: 100%;
+}
+.no1{
+    width: 40%;
+}

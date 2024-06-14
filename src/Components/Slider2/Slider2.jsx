@@ -73,7 +73,7 @@ const Slider2 = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="nharshini1">
+          <div className="harshini1">
             <h1>7</h1>
             <img className="t7" src={tv7} alt="" srcset="" />
           </div>
