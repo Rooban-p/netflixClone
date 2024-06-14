@@ -115,3 +115,36 @@ select:hover {
 .none{
     text-decoration: none;
 }
+@media(max-width:1200px){
+    .f1{
+        display: none;
+    }
+    .f2{
+        display: none;
+    }
+    .f3{
+        display: none;
+    }
+    .f4{
+        display: none;
+    }
+    .mobile1{
+        display: block;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .mobile2{
+        width: 95%;
+        height: 40%;
+        display:flex ;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+@media(max-width:600px){
+    .mobile1{
+        flex-direction: column;
+    }
+
+}
