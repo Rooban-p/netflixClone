@@ -12,6 +12,7 @@ import Movies from '../Layout/Movies'
 
 
 
+
 const RouteParent = () => {
   return (
     <div>

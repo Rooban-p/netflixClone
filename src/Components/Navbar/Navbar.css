@@ -56,6 +56,7 @@
     font-size: 16px;
     font-weight: 600;
     color: #FFFFFF;
+    position: relative;
     /* background-color: aqua; */
 }
 .userAvatar{
@@ -70,6 +71,7 @@
     width: 55%;
     height: 75%;
     border-radius: 4px;
+    position: relative;
 }
 .searchBar{
     width:50%;
@@ -77,8 +79,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    /* background-color: chartreuse; */
+    
+        /* background-color: chartreuse; */
 }
 .searchIcon{
     font-size: 25px;
@@ -88,9 +90,8 @@
 }
 .searchFiled{
     position: absolute;
-    right: 105%;
-    opacity: 0;
-    
+    right: 93%;
+
 }
 .searchFiled input{
     font-size: 14px;
@@ -99,3 +100,4 @@
     border: 1px solid white;
     background: transparent;
 }
+

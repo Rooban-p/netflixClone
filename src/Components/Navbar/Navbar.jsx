@@ -1,21 +1,28 @@
-
+import { React, useState } from "react";
 import "./Navbar.css"
-import { Link } from 'react-router-dom'
+import { Link  } from 'react-router-dom'
 import logo from "./Netflixlogo.png"
 import { FiSearch } from "react-icons/fi";
 import { BsBell } from "react-icons/bs";
 import userlogo from "./Userlogo.png"
 import { FaCaretDown } from "react-icons/fa";
 
+
+
+
 const Navbar = () => {
-    
+    const [state , setState] = useState();
+    const SearchBarHandler = () =>{
+       setState(!state)
+    }
+
   return (
     <div>
         <nav className='navSpace'>
             <div className="navNar">
             <div className='navStartBar'>
             
-                <img src={logo} alt="" />
+                < img src={logo} alt="" />
                 <div className="menu">
 
                     <Link className='menubar' to = {"/"} >  <p>Home</p> </Link>
@@ -36,19 +43,24 @@ const Navbar = () => {
 
                 <div className='navEndbar'>
                     <div className='searchBar'>
-                        <FiSearch  className='searchIcon' />
+                        < FiSearch onClick= {SearchBarHandler} className='searchIcon' />
                         <p>Children</p>
                         <BsBell className='bellIcon' />
 {/* searchBar text area >>>>>>>>> */}
-                    <div className='searchFiled'>
-                        <input placeholder='Title, pepole, geners     ' type="text" />
+
+              {
+                 state === true ? <div className='searchFiled'>
+                                  <input  placeholder='Title, pepole, geners ' type="text" />
+                                 </div> :null 
+             }
+
                     </div>
-                        
-                    </div>
+              
                     <div className='userAvatar'>
                         <img src={userlogo} alt="" />
                         <FaCaretDown />
-                    </div>
+                </div>     
+                    
                 </div>
             </div>
 
