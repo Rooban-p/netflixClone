@@ -14,11 +14,14 @@ import { useState } from "react";
 
 
 const Navbar = () => {
-    const [state, setstate] = useState(false)
+    const [state, setstate] = useState(false); //state 1
     const searchBarHandler = ()=>{
         setstate(!state)
     }
-  
+    const [display,setDisplay] = useState(false); //state 2
+    const menu =()=>{
+        setDisplay(!display)
+    }
   return (
     <div>
         <nav className='navSpace'>
@@ -46,7 +49,7 @@ const Navbar = () => {
 
                 <div className='navEndbar'>
                     <div className='searchBar'>
-                        <FiSearch onClick={searchBarHandler} className='searchIcon' />
+                        <FiSearch  onClick={searchBarHandler} className='searchIcon' />
                         <p>Children</p>
                         <BsBell className='bellIcon' />
 {/* searchBar text area >>>>>>>>> */}
@@ -58,23 +61,27 @@ const Navbar = () => {
                         
                     </div>
                     <div className='userAvatar'>
-                        <img src={userlogo} alt="" />
-                        <FaCaretDown />
-                        <div className="dropParent">
-                        <div className="row1">
-                            <img src={userlogo} alt="" />
-                            <p>Children</p>
-                        </div>
-                        <div className="row2">
-                            <p> < TiPencil /> Manage Profiles</p>
-                            <p> <ImProfile /> Transfer profile</p>
-                           <Link className="linkTag" to={"/Account"}> <p> <FaRegUser /> Account</p></Link> 
-                            <p> <BsQuestionCircle  /> help Center</p>
-                        </div>
-                        <div className="row3">
-                            <p>Sign out of Netflix</p>
-                        </div>
-                    </div>
+                        <img  onClick={menu} src={userlogo} alt=""/>
+                        <FaCaretDown  />
+{/* DropDown text area >>>>>>>>> */}                        
+                        {
+                            display === true ? 
+                            <div className="dropParent">
+                            <div className="row1">
+                                <img src={userlogo} alt="" />
+                                <p>Children</p>
+                            </div>
+                            <div className="row2">
+                                <p> < TiPencil /> Manage Profiles</p>
+                                <p> <ImProfile /> Transfer profile</p>
+                               <Link className="linkTag" to={"/Account"}> <p> <FaRegUser /> Account</p></Link> 
+                                <p> <BsQuestionCircle  /> help Center</p>
+                            </div>
+                            <div className="row3">
+                                <p>Sign out of Netflix</p>
+                            </div>
+                            </div> : null
+                        }
                     </div>
                 </div>
             </div>
