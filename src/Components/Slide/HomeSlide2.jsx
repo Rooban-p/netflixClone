@@ -48,9 +48,9 @@ const Slide = () => {
           videoRef.current.play();
           if (videoRef.current.requestFullscreen) {
             videoRef.current.requestFullscreen();
-          } else if (videoRef.current.mozRequestFullScreen) { /* Firefox */
+          } else if (videoRef.current.mozRequestFullScreen) { 
             videoRef.current.mozRequestFullScreen();
-          } else if (videoRef.current.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+          } else if (videoRef.current.webkitRequestFullscreen) { 
             videoRef.current.webkitRequestFullscreen();
           } else if (videoRef.current.msRequestFullscreen) { /* IE/Edge */
             videoRef.current.msRequestFullscreen();

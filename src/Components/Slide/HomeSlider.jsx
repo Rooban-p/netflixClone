@@ -29,8 +29,31 @@ import  { useState } from 'react';
 import { IoMdClose } from "react-icons/io";
 import Video from "../../Assets/SampleVideos/sample.mp4"
 import  { useRef } from 'react';
+import { IoAddCircle } from "react-icons/io5";
+
+import { useNavigate} from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { storeAction } from "../../Layout/Store"
 
 const Slide = () => {
+
+      const dispatch = useDispatch()
+      const buttonHandler = () =>{
+        dispatch(storeAction.isPopUpHander())
+      };
+      const isPopUp = useSelector ((store) => {
+        return store.isPopUp;
+      });
+    console.log(isPopUp);
+    
+      const navigate = useNavigate();
+      const pageHandler = (e) => {
+        navigate(e);
+      }
+
+
+
+
 
       const [selectedItem, setSelectedItem] = useState(null);
 
@@ -79,10 +102,10 @@ const Slide = () => {
    onSlideChange={() => console.log('slide change')}
      
    >
-      {/* 1 */}
-     <SwiperSlide>
+      
+     <SwiperSlide className='first'>
          <div className='main1'>
-              <div className='main_img1' onClick={() => handleImageClick('item1')} >
+              <div className='main_img1' onClick={() => handleImageClick('item1' )} >
                    <img className='movie_img1' src={img1} alt=""  />
                </div>
                
@@ -100,10 +123,12 @@ const Slide = () => {
                <source src={Video} type="video/mp4"/>
              </video>
              <button className='play1' onClick={handlePlayClick} ><FaCirclePlay />Play</button>
+                  
            </div>
 
            <div className='cont_main1'>
-          
+           <button onClick={buttonHandler}><IoAddCircle  className='add1' /></button>
+
               <div className='video_cont1'>
                  <div className='main_match1'>
                        <h4 className='match1'>98% Match</h4>
@@ -137,7 +162,7 @@ const Slide = () => {
      };
        </SwiperSlide>
 
-{/* 2 */}
+
      <SwiperSlide>
           
      <div className='main2'>
@@ -196,7 +221,7 @@ const Slide = () => {
      };
           
           </SwiperSlide>
-{/* 3 */}
+
          <SwiperSlide>
           
           <div className='main3'>
@@ -224,26 +249,26 @@ const Slide = () => {
                
                    <div className='video_cont3'>
                       <div className='main_match3'>
-                            <h4 className='match3'>98% Match</h4>
+                            <h4 className='match3'>97% Match</h4>
                             <h4>2024</h4>
-                            <h4>1 Season</h4>
+                            <h4>Movie</h4>
                             <h5 className='hd3'>HD</h5>
                       </div>
                       <div className='main_ua3'>
                             <h4 className='ua3'>U/A 16+</h4>
-                            <h5>mature themes, substances, tobacco use, violence</h5>
+                            <h5>suicide,tobacco use,violence</h5>
                       </div>
                       <div className='episode3'>
                             <h3>#1 in TV Shows Today</h3>
                             <h3>S1:E1 "Mallikajaan - The Queen of Heeramandi"</h3>
-                            <h5>As Mallikajaan reigns over her courtesans, rebellion grows on the streets. Alamzeb has her first brush with love. Wali shares key information with Bibbo.</h5>
+                            <h5>Wrongfully suspended while pursuing the culprit in a missing persons case,a cop seeks redemption-and justice--when he gets a new assignment.</h5>
                       </div>
                 </div>
      
                 <div className='cast3'>
-                      <h5>Cast:Manisha Korila, SonikshaSinha, Aditi Rao  Hydari,more</h5>
-                      <h5>Genres:Romantic TV Dramas, Political TV Shows, TV Dramas</h5>
-                      <h5>This Show is:Emotional,Romantic</h5>
+                      <h5>Cast:Tovino Thomas, Siddique, Vineeth Thattil David,more</h5>
+                      <h5>Genres:Malayalam-Language,Movies,Crime Movies,Drama Movies</h5>
+                      <h5>This Show is:Understated,Dark</h5>
                 </div>
      
                 </div>
@@ -256,7 +281,7 @@ const Slide = () => {
                
        </SwiperSlide>
 
-{/* 4 */}
+
 <SwiperSlide>
           
           <div className='main4'>
@@ -286,24 +311,24 @@ const Slide = () => {
                       <div className='main_match4'>
                             <h4 className='match4'>98% Match</h4>
                             <h4>2024</h4>
-                            <h4>1 Season</h4>
+                            <h4>2h 2m</h4>
                             <h5 className='hd4'>HD</h5>
                       </div>
                       <div className='main_ua4'>
-                            <h4 className='ua4'>U/A 16+</h4>
-                            <h5>mature themes, substances, tobacco use, violence</h5>
+                            <h4 className='ua4'>U/A13+</h4>
+                            <h5>In this comedic satire,a groom mistakenly brings home the wrong bride</h5>
                       </div>
                       <div className='episode4'>
-                            <h3>#1 in TV Shows Today</h3>
-                            <h3>S1:E1 "Mallikajaan - The Queen of Heeramandi"</h3>
-                            <h5>As Mallikajaan reigns over her courtesans, rebellion grows on the streets. Alamzeb has her first brush with love. Wali shares key information with Bibbo.</h5>
+                            <h3>#4 in Movies Today</h3>
+                            {/* <h3>S1:E1 "Mallikajaan - The Queen of Heeramandi"</h3> */}
+                            {/* <h5>As Mallikajaan reigns over her courtesans, rebellion grows on the streets. Alamzeb has her first brush with love. Wali shares key information with Bibbo.</h5> */}
                       </div>
                 </div>
      
                 <div className='cast4'>
-                      <h5>Cast:Manisha Korila, SonikshaSinha, Aditi Rao  Hydari,more</h5>
-                      <h5>Genres:Romantic TV Dramas, Political TV Shows, TV Dramas</h5>
-                      <h5>This Show is:Emotional,Romantic</h5>
+                      <h5>Cast:Nitanshi Goel,Pratibha Ranta,Sparsh Shrivastava,more</h5>
+                      <h5>Genres:Hindi-Language Movies,Bollywood Movies,Drama Movies</h5>
+                      <h5>This Show is:Witty,Heartfelt</h5>
                 </div>
      
                 </div>
@@ -348,24 +373,24 @@ const Slide = () => {
                       <div className='main_match5'>
                             <h4 className='match5'>98% Match</h4>
                             <h4>2024</h4>
-                            <h4>1 Season</h4>
+                            <h4>2h 12m</h4>
                             <h5 className='hd5'>HD</h5>
                       </div>
                       <div className='main_ua5'>
-                            <h4 className='ua5'>U/A 16+</h4>
-                            <h5>mature themes, substances, tobacco use, violence</h5>
+                            <h4 className='ua5'>U/A 13+</h4>
+                            <h5>mature themes,tobacco use</h5>
                       </div>
                       <div className='episode5'>
-                            <h3>#1 in TV Shows Today</h3>
-                            <h3>S1:E1 "Mallikajaan - The Queen of Heeramandi"</h3>
-                            <h5>As Mallikajaan reigns over her courtesans, rebellion grows on the streets. Alamzeb has her first brush with love. Wali shares key information with Bibbo.</h5>
+                            {/* <h3>#1 in TV Shows Today</h3> */}
+                            <h3>Watch in Tamil,Telugu,Malayalam,Kannada,Hindi</h3>
+                            <h5>When an exceptionally light sleeper discovers his new wife snores loudly,navigating their dilemma may be the wake-up call he needs about marriage.</h5>
                       </div>
                 </div>
      
                 <div className='cast5'>
-                      <h5>Cast:Manisha Korila, SonikshaSinha, Aditi Rao  Hydari,more</h5>
-                      <h5>Genres:Romantic TV Dramas, Political TV Shows, TV Dramas</h5>
-                      <h5>This Show is:Emotional,Romantic</h5>
+                      <h5>Cast:G.V.Prakash Kumar,Aishwarya Rajesh,Thalaivasal Vijay,more</h5>
+                      <h5>Genres:Drama Movies,Tamil-Language Movies</h5>
+                      <h5>This Show is:Intimate,Emotional</h5>
                 </div>
      
                 </div>
@@ -977,6 +1002,7 @@ const Slide = () => {
 </SwiperSlide>
      
    </Swiper>
+   
    </div>
    
  )
