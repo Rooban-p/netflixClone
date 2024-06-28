@@ -28,14 +28,17 @@
 }
 .navNar img {
   height: 85%;
-  width: 20%;
+  width: 60%;
   /* background-color: white; */
 }
+.navlink{
+  width: 30%;
+}
 .menu {
-  width: 83%;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   /* background-color: blue; */
 }
 .menubar {
