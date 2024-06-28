@@ -7,7 +7,10 @@ import Slide3 from "../Components/Slide/HomeSlide3"
 import HomeCover from "../Components/HomeCover/HomeCover1";
 import Slider1 from "../Components/Slider1/Slider1";
 import Slider2 from "../Components/Slider2/Slider2";
+
 const MyList = () => {
+
+  
   return (
     <div>
        <Navbar />
@@ -22,6 +25,10 @@ const MyList = () => {
       <Slide2 />
       <Slide3 />
       <Footer />
+    
+     
+      
+      
     </div>
   )
 }

@@ -1,19 +1,16 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
-import Footer from '../Components/Footer/Footer'
-import Slide from '../Components/Slide/HomeSlider'
-import Slide2 from "../Components/Slide/HomeSlide2"
-import Slide3 from "../Components/Slide/HomeSlide3"
-// import HomeCover from "../Components/HomeCover/HomeCover1";
+import Footer from "../Components/Footer/Footer";
+import HomeCover1 from "../Components/HomeCover/HomeCover1";
 import Slider1 from "../Components/Slider1/Slider1";
 import Slider2 from "../Components/Slider2/Slider2";
-import HomeCover4 from '../Components/HomeCover/HomeCover4'
+import Slide from "../Components/Slide/HomeSlider";
+import Slide2 from "../Components/Slide/HomeSlide2";
+import Slide3 from "../Components/Slide/HomeSlide3";
 const NewsNdPopular = () => {
   return (
     <div>
       <Navbar />
-     
-      <HomeCover4 />
       <Slider1 />
       <Slide />
       <Slide2 />
@@ -23,6 +20,8 @@ const NewsNdPopular = () => {
       <Slide2 />
       <Slide3 />
       <Footer />
+   
+  
     </div>
   )
 }
