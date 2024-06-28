@@ -5,6 +5,8 @@
 .navSpace {
   width: 100%;
   height: 90px;
+  /* position: sticky;
+  top : 0; */
   background-color: black;
 }
 .navNar {
@@ -105,15 +107,15 @@
   position: absolute;
   right: 20%;
   top: 100%;
-  width: 190px;
+  width: 200px;
   height: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  backdrop-filter: blur(4px);
+  background-color: black;
+  backdrop-filter: blur(5px);
   font-size: 14px;
-  opacity: 0;
-  z-index: 3;
+  z-index: 4;
   /* border:  2px solid wheat; */
 }
 .linkTag{
@@ -149,7 +151,7 @@
   justify-content: center;
   border-top: #757575 1px solid;
 }
-.userAvatar:hover .dropParent {
+/* .userAvatar:hover .dropParent {
   opacity: 1;
   transition: 0.5s;
-}
+} */
