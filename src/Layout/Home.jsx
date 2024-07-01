@@ -13,8 +13,10 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <HomeCover1 />
+    
 
+      <HomeCover1 />
+      
       <Slider1 />
       <Slide />
       <Slide2 />
@@ -24,6 +26,7 @@ const Home = () => {
       <Slide2 />
       <Slide3 />
       <Footer />
+      
     </div>
   );
 };

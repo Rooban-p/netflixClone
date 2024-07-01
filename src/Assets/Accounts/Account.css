@@ -204,3 +204,17 @@
     border: 1px solid #787878;
     border-radius: 5px;
 }
+
+
+
+@media (max-width : 1200px){
+    .parentSpace{
+        width: 90%;
+    }
+    .accounterMenu {
+        height: 25%;
+    }
+    .accountContentParent{
+        height: 45%;
+    }
+}
